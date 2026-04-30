@@ -90,3 +90,70 @@ This design allows easy **future expansion** without system redesign.
 The system supports a **standardized Excel structure** for inventory data.
 
 ### Example Inventory Summary
+Item_Type     | Item_Name   | Attribute | Total_Quantity | Distributed_Quantity | Balance_Quantity
+Apparel       | T‑Shirt     | XL        | 300            | 120                  | 180
+Electronics   | Headset     | Wireless  | 100            | 40                   | 60
+Merchandise   | Coffee Mug | Ceramic   | 200            | 75                   | 125
+
+
+### Important Rules
+- Excel is used for **input and reporting purposes only**
+- The **system is the source of truth**
+- Inventory values cannot be manually modified outside the system
+
+---
+
+## 7. Approval & Control Principles
+
+- All inventory distribution actions require approval
+- Direct modification of inventory quantities is not allowed
+- Maker and Checker roles are strictly enforced
+- Every approval or rejection is logged
+- Full audit history is maintained for compliance and traceability
+
+---
+
+## 8. User Roles (High‑Level)
+
+### Executive
+- Upload inventory data
+- View inventory summaries
+- Initiate distribution requests
+
+### Manager
+- Review and approve or reject inventory distributions
+- View approval history
+
+### Admin
+- Manage users and roles
+- Configure approval workflows
+- Access audit logs and system configurations
+
+---
+
+## 9. Key System Principles
+
+- Generic and reusable design
+- Approval‑driven inventory control
+- Audit‑ready architecture
+- Simple and user‑friendly BAU operations
+- Scalable for future inventory types
+
+---
+
+## 10. Project Status & Next Steps
+
+This README serves as the **foundation document** for the project.
+
+### Next Steps:
+1. Repository structure setup
+2. Architecture design
+3. Database schema design
+4. Agile development execution
+5. Testing and UAT
+6. Production deployment
+7. Transition to BAU operations
+
+---
+
+✅ **This document represents the first and most important commit of the project.**
